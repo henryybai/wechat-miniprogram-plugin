@@ -86,12 +86,12 @@ For detailed usage documents and function descriptions, please visit
 }
 
 intellij {
-    version = "2023.1"
+    version = "2023.2.4"
     pluginName = "wechat-miniprogram-plugin"
     type = "IU"
     updateSinceUntilBuild = false
     downloadSources = true
-    plugins = listOf("JavaScript", "com.intellij.css", "less", "sass", "org.jetbrains.plugins.stylus:231.8109.91")
+    plugins = listOf("JavaScript", "com.intellij.css", "less", "sass", "org.jetbrains.plugins.stylus:232.8660.129")
 }
 
 repositories {
@@ -105,3 +105,4 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-script-runtime:1.9.0")
     implementation("org.jetbrains.kotlin:kotlin-reflect:1.9.0")
 }
+
