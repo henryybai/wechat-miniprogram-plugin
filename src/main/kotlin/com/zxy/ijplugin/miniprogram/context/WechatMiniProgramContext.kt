@@ -98,7 +98,7 @@ fun findMiniProgramRootDir(project: Project): PsiDirectory? {
             it.name == "miniprogramRoot"
         }?.value as? JsonStringLiteral)
     }?.let { jsonStringLiteral ->
-        FileReferenceSet(jsonStringLiteral).allReferences.last {
+        FileReferenceSet(jsonStringLiteral).allReferences.lastOrNull {
             it.text.isNotBlank()
         }?.resolve()
     } as? PsiDirectory ?: findProjectRootDir(project)
