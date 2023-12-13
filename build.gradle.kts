@@ -29,7 +29,6 @@ tasks {
 
     patchPluginXml {
         sinceBuild = "231"
-        untilBuild = "232.*"
 
         changeNotes = """
 <ul lang="cn">
@@ -86,12 +85,12 @@ For detailed usage documents and function descriptions, please visit
 }
 
 intellij {
-    version = "2023.2.4"
+    version = "2023.3"
     pluginName = "wechat-miniprogram-plugin"
     type = "IU"
     updateSinceUntilBuild = false
     downloadSources = true
-    plugins = listOf("JavaScript", "com.intellij.css", "less", "sass", "org.jetbrains.plugins.stylus:232.8660.129")
+    plugins = listOf("JavaScript", "com.intellij.css", "less", "sass")
 }
 
 repositories {
